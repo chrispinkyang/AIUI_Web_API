@@ -6,19 +6,19 @@ import base64
 import json
 
 URL = "http://openapi.xfyun.cn/v2/aiui"
-APPID = "5b9b70dd"
-API_KEY = "92b69ef855cf4c22acc8caba7c742eca"
+APPID = "" # 你的APP ID
+API_KEY = "" # 你的API_KEY
 AUE = "raw"
-AUTH_ID = "2894c985bf8b1111c6728db79d3479ae"
-DATA_TYPE = "text"
+AUTH_ID = "" # 你的AUTH ID
+DATA_TYPE = "text" # 明确处理类型 text文本/audio音频
 SAMPLE_RATE = "16000"
-SCENE = "main"
+SCENE = "main" # 情景值
 RESULT_LEVEL = "complete"
-LAT = "23.16"
-LNG = "113.23"
+LAT = "23.16" # 纬度
+LNG = "113.23" # 经度
 #个性化参数，需转义
 PERS_PARAM = "{\\\"auth_id\\\":\\\"2894c985bf8b1111c6728db79d3479ae\\\"}"
-FILE_PATH = "test.txt"
+FILE_PATH = "test.txt" # 如需要从文本中读取,填写文本文件地址,每行为一个输入
 
 
 def buildHeader():
